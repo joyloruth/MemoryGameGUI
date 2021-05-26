@@ -13,16 +13,17 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
-public class Board extends JFrame {
+public class GameFrame extends JFrame {
 	
 	Panel panel;
 	JPanel panel2 = new JPanel();
 	ImageIcon avatar = new ImageIcon("kiss.png");
 	JLabel label;
 	JButton button;
+	Card card = new Card();
 	
 	
-	Board(){
+	public GameFrame(){
 		
 		super();
 		
@@ -35,9 +36,11 @@ public class Board extends JFrame {
 		this.setTitle("Matching Game");
 		this.setIconImage(avatar.getImage());
 		
+		this.getContentPane().setLayout(new GridLayout(6,card.pics.length) );
 		
 		
-		panel = new Panel();
+		
+		/*panel = new Panel();
 		this.add(panel);
 		
 		label = new JLabel();
@@ -55,7 +58,7 @@ public class Board extends JFrame {
 		button = new JButton("Start");
 		button.setBounds(40,200,100, 40);
 		panel2.add(button);
-		//JOptionPane.showMessageDialog(null, "        Press Ok To Start","Start", JOptionPane.INFORMATION_MESSAGE);
+		//JOptionPane.showMessageDialog(null, "        Press Ok To Start","Start", JOptionPane.INFORMATION_MESSAGE);*/
 		
 	}
 

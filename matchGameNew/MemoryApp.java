@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
 
-public class StartGame {
+public class MemoryApp {
 
 	public static void main(String[] args) {
 		//new Board();
@@ -14,7 +14,7 @@ public class StartGame {
 		
 		int list = scan.nextInt();
 		
-		StartGame game = new StartGame();
+		MemoryApp game = new MemoryApp();
 		
 		List<Long> ar = new ArrayList<Long>();
 		
