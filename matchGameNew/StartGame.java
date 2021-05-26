@@ -37,7 +37,6 @@ public class StartGame {
 			 sum += num;
 		 }
 		
-		System.out.println(sum);
 		return sum;
 		    
 
