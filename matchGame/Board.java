@@ -12,7 +12,7 @@ import javax.swing.JPanel;
 
 public class Board extends JFrame implements ActionListener {
 	
-	JPanel panel; 
+	Panel panels;
 	JButton[] functionButtons = new JButton[36];
 	JButton one,two,three, four, five, six,seven,eight,nine,ten,eleven,twelve;
 	
@@ -35,11 +35,11 @@ public class Board extends JFrame implements ActionListener {
 		setResizable(false);
 		setDefaultCloseOperation(this.EXIT_ON_CLOSE);
 		
-		panel = new JPanel();
-		panel.setBackground(Color.BLACK);
-		panel.setBounds(10, 10, 560,520);
+		//panel = new JPanel();
+		//panel.setBackground(Color.BLACK);
+		//panel.setBounds(10, 10, 560,520);
 		
-		this.add(panel);
+		this.add(panels);
 		
 		functionButtons[0] = one;
 		functionButtons[1] = two;
