@@ -8,9 +8,9 @@ import java.util.Scanner;
 public class MemoryApp {
 
 	public static void main(String[] args) {
-		//new Board();
+		new GameFrame();
 		
-		Scanner scan = new Scanner(System.in);
+		/*Scanner scan = new Scanner(System.in);
 		
 		int list = scan.nextInt();
 		
@@ -40,6 +40,8 @@ public class MemoryApp {
 		return sum;
 		    
 
-		    }
+		    }*/
 
+}
+	
 }
